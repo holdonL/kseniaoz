@@ -1,0 +1,43 @@
+$text-color: #2c2a28;
+
+@mixin transition {
+    transition: all 0.5s ease-out;
+}
+
+@mixin transition2 {
+    transition: all 0.5s ease-in-out;
+}
+
+@font-face {
+    font-family: "Lato-Light";
+  
+    src: url("../fonts/9625.woff") format("woff"), /* Modern Browsers */
+      url("../fonts/9625.woff2") format("woff2"); /* Modern Browsers */
+    font-weight: normal;
+    font-style: normal;
+  }
+
+//Media query mixins
+@mixin mediaSm {
+    @media screen and (max-width: 500px) {
+        @content;
+    }
+}
+
+@mixin mediaMd {
+    @media screen and (max-width: 768px) {
+        @content;
+    }
+}
+
+@mixin mediaLg {
+    @media screen and (min-width: 769px) and (max-width: 1170px) {
+        @content;
+    }
+}
+
+@mixin mediaXL {
+    @media screen and (min-width: 1171px) {
+        @content;
+    }
+}

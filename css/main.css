@@ -32,16 +32,16 @@ body {
   background-size: cover;
 }
 
-.index {
-  overflow: hidden;
-}
-
 .logo {
-  display: block;
   margin-left: auto;
   margin-right: auto;
   margin-top: 30px;
   margin-bottom: 20px;
+  width: 713px;
+  height: 203px;
+  background-image: url(../img/logo.png);
+  background-position: center;
+  background-size: 713px 203px;
 }
 
 .navigation-list {
@@ -180,5 +180,20 @@ body {
 
 .icon-gmail {
   background-image: url(../img/icon_gmail.svg);
+}
+
+@media screen and (max-width: 500px) {
+  .logo {
+    width: 250px;
+    height: 71px;
+    background-size: 250px 71px;
+  }
+  .navigation-list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 250px;
+  }
 }
 /*# sourceMappingURL=main.css.map */
