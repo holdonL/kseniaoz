@@ -16,6 +16,11 @@
 
 //Smartphones
 @include mediaSm {
+    img {
+        width: 100%;
+        height: auto;
+    }
+
     .logo {
         width: 300px;
         height: 86px;
@@ -32,5 +37,41 @@
         padding: 0 15px;
         border: 1px solid rgba(128, 128, 128, 0.685);
         border-radius: 10px;
+    }
+
+    .contacts {
+        width: 300px;
+    }
+
+    // about
+    .about-info {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        width: 300px;
+        grid-auto-rows: minmax(300px, auto);
+        grid-row-gap: 15px;
+    }
+
+    .text-element1 {
+        grid-row: 2;
+        padding: 0;
+    }
+
+    .img-element1 {
+        grid-column: 1;
+        grid-row: 1;
+        padding: 0;
+    }
+    
+    .img-element2 {
+        grid-column: 1;
+        grid-row: 3;
+        padding: 0;
+    }
+    
+    .text-element2 {
+        grid-column: 1;
+        grid-row: 4;
+        padding: 0;
     }
 }

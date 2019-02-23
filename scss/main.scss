@@ -1,5 +1,4 @@
 @import "config";
-@import "about";
 
 .visually-hidden {
 	position: absolute !important;
@@ -27,9 +26,9 @@ body {
     background-size: cover;
 }
 
-// .inner {
-//     background-image: none;
-// }
+.inner-main {
+    min-height: calc(100vh - 424px);
+}
 
 .logo {
     margin-left: auto;
@@ -167,4 +166,6 @@ body {
     background-image: url(../img/icon_gmail.svg);
 }
 
+@import "about";
+@import "contacts";
 @import "mobile";
