@@ -1,4 +1,5 @@
 @import "config";
+@import "about";
 
 .visually-hidden {
 	position: absolute !important;
@@ -26,8 +27,8 @@ body {
     background-size: cover;
 }
 
-// .index {
-//     overflow: hidden;
+// .inner {
+//     background-image: none;
 // }
 
 .logo {
