@@ -102,7 +102,8 @@ footer {
   padding: 0 15px;
 }
 
-.navigation-list-item:hover a::after {
+.navigation-list-item:hover a::after,
+.navigation-list-item:focus a::after {
   width: 100%;
 }
 
@@ -111,6 +112,10 @@ footer {
   text-decoration: none;
   position: relative;
   display: inline-block;
+}
+
+.navigation-list-item a:focus::after {
+  width: 100%;
 }
 
 .navigation-list-item a::after {
@@ -156,7 +161,7 @@ footer {
   transition: all 0.5s ease-out;
 }
 
-.button:hover {
+.button:hover, .button:focus {
   background-color: rgba(163, 163, 163, 0.151);
   color: #000;
   border-color: #000;
@@ -193,7 +198,7 @@ footer {
   transition: all 0.5s ease-out;
 }
 
-.social-list-item a:hover {
+.social-list-item a:hover, .social-list-item a:focus {
   opacity: 0.8;
 }
 
