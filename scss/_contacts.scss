@@ -5,6 +5,7 @@
     margin-right: auto;
     width: 850px;
     text-align: center;
+    font-size: 18px;
 }
 
 .contacts-list {
@@ -12,4 +13,13 @@
     margin: 0;
     padding: 0;
     font-weight: bold;
+
+    h2 {
+        color: rgba(0, 0, 0, 0.534);
+    }
+
+    a {
+        color: rgb(96, 163, 167);
+        text-decoration: none;
+    }
 }

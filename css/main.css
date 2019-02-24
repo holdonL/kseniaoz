@@ -36,6 +36,14 @@ body {
   min-height: calc(100vh - 424px);
 }
 
+.current-item {
+  pointer-events: none;
+}
+
+.current {
+  border-bottom: 1px solid black;
+}
+
 .logo {
   margin-left: auto;
   margin-right: auto;
@@ -257,6 +265,7 @@ p {
   margin-right: auto;
   width: 850px;
   text-align: center;
+  font-size: 18px;
 }
 
 .contacts-list {
@@ -266,7 +275,19 @@ p {
   font-weight: bold;
 }
 
+.contacts-list h2 {
+  color: rgba(0, 0, 0, 0.534);
+}
+
+.contacts-list a {
+  color: #60a3a7;
+  text-decoration: none;
+}
+
 @media screen and (max-width: 500px) {
+  .current {
+    background-color: rgba(163, 163, 163, 0.103);
+  }
   img {
     width: 100%;
     height: auto;
@@ -283,11 +304,16 @@ p {
             flex-direction: column;
     height: 230px;
     width: 250px;
+    background-color: transparent;
   }
-  .navigation-list-item {
+  .navigation-list-item a {
+    min-width: 120px;
     padding: 0 15px;
     border: 1px solid rgba(128, 128, 128, 0.685);
     border-radius: 10px;
+  }
+  .navigation-list-item a::after {
+    height: 0;
   }
   .contacts {
     width: 300px;
