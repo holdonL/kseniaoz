@@ -17,6 +17,10 @@
 //Smartphones
 @include mediaSm {
 
+    footer {
+        padding-top: 60px;
+    }
+
     .current {
         background-color: rgba(163, 163, 163, 0.103);
     }

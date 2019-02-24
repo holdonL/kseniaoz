@@ -295,6 +295,9 @@ p {
 }
 
 @media screen and (max-width: 500px) {
+  footer {
+    padding-top: 60px;
+  }
   .current {
     background-color: rgba(163, 163, 163, 0.103);
   }
