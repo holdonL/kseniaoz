@@ -32,17 +32,18 @@ body {
   background-size: cover;
 }
 
-.index-body {
+.index-body,
+.inner-body {
   overflow-y: scroll;
 }
 
 .inner-body {
   background-image: none;
-  background-color: #fff;
 }
 
-.inner-main {
-  min-height: calc(100vh - 424px);
+.inner-main,
+.index-main {
+  min-height: calc(100vh - 395px);
 }
 
 .current-item {
@@ -140,7 +141,7 @@ body {
   margin: 0;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 80px;
+  margin-bottom: 1px;
   border-radius: 10px;
   -webkit-transition: all 0.5s ease-out;
   transition: all 0.5s ease-out;
@@ -227,10 +228,6 @@ p {
 .about-info img {
   display: block;
   border-radius: 50%;
-}
-
-.footer-inner {
-  margin-bottom: 30px;
 }
 
 .img-element1 {
