@@ -362,6 +362,7 @@ p {
       -ms-flex-direction: column;
           flex-direction: column;
   padding: 50px;
+  padding-top: 0;
 }
 
 .sign-buttons {
@@ -540,9 +541,12 @@ p {
     margin-top: -150px;
     top: 30%;
   }
+  .signup-popup h2 {
+    margin-left: -40px;
+  }
   .signup-popup .close {
-    top: 5px;
-    right: 5px;
+    top: 20px;
+    right: 10px;
   }
   .sign-buttons {
     min-height: 90px;
