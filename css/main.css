@@ -167,6 +167,15 @@ footer {
   border-color: #000;
 }
 
+.button-signup {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  margin-left: 50px;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+}
+
 .social-list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -179,7 +188,14 @@ footer {
   margin: 0;
   padding: 0;
   margin-left: auto;
-  margin-right: auto;
+  margin-right: 0;
+}
+
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-bottom: 30px;
 }
 
 .social-list-item {
@@ -189,7 +205,7 @@ footer {
 .social-list-item a {
   display: inline-block;
   width: 40px;
-  height: 40px;
+  height: 35px;
   background-position: center;
   background-size: 30px 30px;
   background-repeat: no-repeat;

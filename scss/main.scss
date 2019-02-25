@@ -155,6 +155,14 @@ footer {
     }
 }
 
+.button-signup {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    margin-left: 50px;
+    align-self: flex-start;
+}
+
 .social-list {
     display: flex;
     justify-content: space-between;
@@ -163,7 +171,12 @@ footer {
     margin: 0;
     padding: 0;
     margin-left: auto;
-    margin-right: auto;
+    margin-right: 0;
+}
+
+footer {
+    display: flex;
+    padding-bottom: 30px;
 }
 
 .social-list-item {
@@ -171,7 +184,7 @@ footer {
     a {
         display: inline-block;
         width: 40px;
-        height: 40px;
+        height: 35px;
         background-position: center;
         background-size: 30px 30px;
         background-repeat: no-repeat;
