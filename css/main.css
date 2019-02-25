@@ -191,6 +191,10 @@ footer {
   margin-right: 0;
 }
 
+.social-list--signup {
+  margin-right: auto;
+}
+
 footer {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -319,6 +323,32 @@ p {
   text-decoration: none;
 }
 
+.signup {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 600px;
+  margin: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.signup-form {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 50px;
+}
+
+.sign-buttons {
+  margin-top: 30px;
+}
+
 @media screen and (max-width: 768px) {
   .about-info {
     width: 720px;
@@ -362,8 +392,29 @@ p {
 }
 
 @media screen and (max-width: 500px) {
+  .signup {
+    width: 300px;
+  }
   footer {
+    min-height: 100px;
     padding-top: 60px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .footer-inner--signup {
+    min-height: 40px;
+  }
+  .button-signup {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .social-list {
+    margin-right: auto;
   }
   .current {
     background-color: rgba(163, 163, 163, 0.103);
