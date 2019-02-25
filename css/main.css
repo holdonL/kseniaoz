@@ -363,6 +363,7 @@ p {
           flex-direction: column;
   padding: 50px;
   padding-top: 0;
+  padding-bottom: 25px;
 }
 
 .sign-buttons {
