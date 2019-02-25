@@ -67,5 +67,25 @@
         </ul>
         <a class="button button-signup" href="signup.html">Записаться</a>
     </footer>
+    <!-- sign form -->
+    <section class="signup signup-popup">
+        <h2>Записаться на фотосессию</h1>
+        <form class="signup-form" netlify data-netlify-recaptcha="true" name="sign-up" method="POST">
+            <label for="name">Ваше имя</label>
+            <input id="name" type="text" name="name" placeholder="Петя Клинков">
+            <label for="date">Удобная для Вас дата</label>
+            <input id="date" type="text" name="date" placeholder="20.02.2019">
+            <label for="email">Ваша электронная почта</label>
+            <input id="email" type="email" name="email" placeholder="kotik@gmail.com" required>
+            <div class="captcha" data-netlify-recaptcha="true"></div>
+            <div class="sign-buttons">
+                <button class="button" type="reset">Сбросить</button>
+                <button class="button" type="submit">Готово!</button>
+            </div>
+            <button class="close"></button>
+        </form>
+    </section>
+    <div class="overlay"></div>
+    <script src="js/popup.js"></script>
 </body>
 </html>

@@ -167,6 +167,10 @@ footer {
   border-color: #000;
 }
 
+.button:active {
+  background-color: #702e2dc2;
+}
+
 .button-signup {
   display: block;
   text-align: center;
@@ -332,6 +336,21 @@ p {
   margin-right: auto;
 }
 
+.signup h2 {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 25px;
+  color: #5c5c5c;
+}
+
+.signup input {
+  padding: 5px 15px;
+  border: 1px solid #8a8989;
+  border-radius: 10px;
+  -webkit-box-shadow: 2px 2px 5px rgba(138, 137, 137, 0.472);
+          box-shadow: 2px 2px 5px rgba(138, 137, 137, 0.472);
+}
+
 .signup-form {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -358,6 +377,118 @@ p {
       align-self: center;
   margin-top: 20px;
   margin-bottom: 5px;
+}
+
+.signup-popup {
+  display: none;
+  position: fixed;
+  z-index: 2;
+  top: 50%;
+  left: 50%;
+  margin-left: -300px;
+  margin-top: -300px;
+  background-color: #fdfdfd;
+  border-radius: 10px;
+}
+
+.signup-popup .close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 40px;
+  height: 40px;
+  border: 0;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.signup-popup .close::after, .signup-popup .close::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 0;
+  width: 40px;
+  height: 4px;
+  background-color: rgba(124, 124, 124, 0.801);
+  border-radius: 10px;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.signup-popup .close:hover::after, .signup-popup .close:hover::before, .signup-popup .close:focus::after, .signup-popup .close:focus::before {
+  background-color: black;
+}
+
+.signup-popup .close:active::before, .signup-popup .close:active::after {
+  background-color: #702e2dc2;
+}
+
+.signup-popup .close::before {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.signup-popup .close::after {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+.overlay {
+  display: none;
+  content: "";
+  position: fixed;
+  background-color: rgba(128, 128, 128, 0.233);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 1;
+}
+
+@-webkit-keyframes bounce {
+  0% {
+    -webkit-transform: translateY(-2000px);
+            transform: translateY(-2000px);
+  }
+  70% {
+    -webkit-transform: translateY(30px);
+            transform: translateY(30px);
+  }
+  90% {
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes bounce {
+  0% {
+    -webkit-transform: translateY(-2000px);
+            transform: translateY(-2000px);
+  }
+  70% {
+    -webkit-transform: translateY(30px);
+            transform: translateY(30px);
+  }
+  90% {
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+.show {
+  display: block;
+  -webkit-animation: bounce 0.5s;
+          animation: bounce 0.5s;
 }
 
 @media screen and (max-width: 768px) {
@@ -403,6 +534,16 @@ p {
 }
 
 @media screen and (max-width: 500px) {
+  .signup-popup {
+    width: 300px;
+    margin-left: -150px;
+    margin-top: -150px;
+    top: 30%;
+  }
+  .signup-popup .close {
+    top: 5px;
+    right: 5px;
+  }
   .sign-buttons {
     min-height: 90px;
     -webkit-box-orient: vertical;

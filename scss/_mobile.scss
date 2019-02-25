@@ -51,6 +51,18 @@
 //Smartphones
 @include mediaSm {
 
+    .signup-popup {
+        width: 300px;
+        margin-left: -150px;
+        margin-top: -150px;
+        top: 30%;
+
+        .close {
+            top: 5px;
+            right: 5px;
+        }
+    }
+
     .sign-buttons {
         min-height: 90px;
         flex-direction: column;

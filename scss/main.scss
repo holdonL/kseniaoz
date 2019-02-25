@@ -153,6 +153,10 @@ footer {
         color: #000;
         border-color: #000;
     }
+
+    &:active {
+        background-color: #702e2dc2;
+    }
 }
 
 .button-signup {
