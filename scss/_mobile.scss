@@ -170,6 +170,10 @@
         }
     }
 
+    .current {
+        background-color: rgba(163, 163, 163, 0.445);
+    }
+
     .show-menu {
         display: flex;
         position: fixed;
