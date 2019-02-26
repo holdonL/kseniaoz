@@ -52,7 +52,7 @@ footer {
 
 .inner-main,
 .index-main {
-  min-height: calc(100vh - 445px);
+  min-height: calc(100vh - 450px);
 }
 
 .current-item {
@@ -371,6 +371,14 @@ p {
           box-shadow: 2px 2px 5px rgba(138, 137, 137, 0.472);
 }
 
+.signup textarea {
+  padding: 5px 15px;
+  border: 1px solid #8a8989;
+  border-radius: 10px;
+  -webkit-box-shadow: 2px 2px 5px rgba(138, 137, 137, 0.472);
+          box-shadow: 2px 2px 5px rgba(138, 137, 137, 0.472);
+}
+
 .signup-form {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -594,6 +602,9 @@ p {
   .signup {
     width: 300px;
   }
+  .signup label {
+    line-height: 24px;
+  }
   footer {
     min-height: 100px;
     padding-top: 60px;
@@ -611,9 +622,15 @@ p {
   .button-signup {
     margin-left: auto;
     margin-right: auto;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
   }
   .social-list {
     margin-right: auto;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
   }
   .current {
     background-color: rgba(163, 163, 163, 0.137);

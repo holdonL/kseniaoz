@@ -12,5 +12,9 @@ var mainLink = document.querySelector(".main-link");
         navList.classList.toggle("show-menu");
         menuBtn.classList.toggle("show-menu-button");
         overlayMenu.classList.toggle("show-overlay2");
-        mainLink.classList.toggle("show-menu-button");
+        
+        if (mainLink != null && mainLink != 'undefined') {
+
+            mainLink.classList.toggle("show-menu-button");
+        }
     })

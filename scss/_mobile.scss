@@ -80,6 +80,10 @@
 
     .signup {
         width: 300px;
+
+        label {
+            line-height: 24px;
+        }
     }
 
     //footer
@@ -98,10 +102,12 @@
     .button-signup {
         margin-left: auto;
         margin-right: auto;
+        order: 1;
     }
 
     .social-list {
         margin-right: auto;
+        order: 2;
     }
 
     .current {
