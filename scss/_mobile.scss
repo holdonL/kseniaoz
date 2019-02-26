@@ -1,12 +1,15 @@
 //Widescreens
 @include mediaXL {
-   
+    .menu-button {
+        display: none;
+   }
 }
 
 //Desktops & Laptops
 @include mediaLg {
-   
-    
+   .menu-button {
+        display: none;
+   }
 }
 
 //Tablets & Small Laptops
