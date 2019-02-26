@@ -633,12 +633,14 @@ p {
     border: 0;
     font: inherit;
     text-transform: uppercase;
+    color: #2c2a28;
   }
   .main-link {
     top: 10px;
     left: 20px;
     text-decoration: none;
     width: 100px;
+    color: #2c2a28;
   }
   .navigation-list {
     display: none;
