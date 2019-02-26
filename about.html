@@ -21,7 +21,7 @@
         <button class="menu-button menu-js">Меню</button>
         <div class="overlay2"></div>
         <nav class="navigation">
-            <ul class="navigation-list">
+            <ul class="navigation-list no-js">
                 <li class="navigation-list-item current-item">
                     <a href="#" class="current">Обо мне</a>
                 </li>
@@ -89,11 +89,15 @@
         <h2>Записаться на фотосессию</h2>
         <form class="signup-form" data-netlify="true" name="sign-up" method="POST">
             <label for="name">Ваше имя</label>
-            <input id="name" type="text" name="name" placeholder="Петя Клинков">
-            <label for="date">Удобная для Вас дата</label>
+            <input id="name" type="text" name="name" placeholder="Петя Клинков" required>
+            <label for="date">Удобная для Вас дата (необязательно)</label>
             <input id="date" type="text" name="date" placeholder="20.02.2019">
-            <label for="email">Ваша электронная почта</label>
+            <label for="ideas">Идеи и пожелания для фотосессии (необязательно)</label>
+            <textarea id="ideas" name="ideas" rows="5" placeholder="Хочу сфотографироваться в костюме кота"></textarea>
+            <label for="email">Электронная почта (спамить не будем)</label>
             <input id="email" type="email" name="email" placeholder="kotik@gmail.com" required>
+            <label for="tel">Номер для связи</label>
+            <input id="tel" type="tel" name="telephone" placeholder="+7-999-252-55-25" required>
             <div class="sign-buttons">
                 <button class="button" type="reset">Сбросить</button>
                 <button class="button" type="submit">Готово!</button>

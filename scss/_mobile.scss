@@ -80,6 +80,10 @@
 
     .signup {
         width: 300px;
+
+        label {
+            line-height: 24px;
+        }
     }
 
     //footer
@@ -98,14 +102,16 @@
     .button-signup {
         margin-left: auto;
         margin-right: auto;
+        order: 1;
     }
 
     .social-list {
         margin-right: auto;
+        order: 2;
     }
 
     .current {
-        background-color: rgba(163, 163, 163, 0.103);
+        background-color: rgba(163, 163, 163, 0.137);
     }
 
     //logo
@@ -156,7 +162,15 @@
                 background-color: gray;
             }
         }
+    }
 
+    .navigation-list.no-js {
+        display: flex;
+        height: 200px;
+        
+        a {
+            color: #000;
+        }
     }
 
     .navigation-list-item a {
