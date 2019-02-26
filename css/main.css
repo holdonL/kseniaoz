@@ -661,6 +661,15 @@ p {
   .navigation-list a:hover, .navigation-list a:focus, .navigation-list a:active {
     background-color: gray;
   }
+  .navigation-list.no-js {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 200px;
+  }
+  .navigation-list.no-js a {
+    color: #000;
+  }
   .navigation-list-item a {
     min-width: 120px;
     padding: 0 15px;

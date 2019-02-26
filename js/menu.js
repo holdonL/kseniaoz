@@ -3,6 +3,9 @@ var navList = document.querySelector(".navigation-list");
 var overlayMenu = document.querySelector(".overlay2");
 var mainLink = document.querySelector(".main-link");
 
+    if (navList.classList.contains("no-js")) {
+        navList.classList.remove("no-js");
+    }
 
     menuBtn.addEventListener("click", function(evt){
         evt.preventDefault();

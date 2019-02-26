@@ -156,7 +156,15 @@
                 background-color: gray;
             }
         }
+    }
 
+    .navigation-list.no-js {
+        display: flex;
+        height: 200px;
+        
+        a {
+            color: #000;
+        }
     }
 
     .navigation-list-item a {
