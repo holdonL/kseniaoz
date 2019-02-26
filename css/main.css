@@ -63,16 +63,36 @@ footer {
   border-bottom: 1px solid black;
 }
 
-.logo {
-  margin-left: auto;
-  margin-right: auto;
+.logo-link {
+  display: block;
   margin-top: 30px;
   margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
   width: 713px;
   height: 203px;
   background-image: url(../img/logo.png);
   background-position: center;
   background-size: 713px 203px;
+}
+
+.logo-link-index {
+  display: block;
+  background-image: none;
+}
+
+.overlay2 {
+  display: none;
+  content: "";
+  position: fixed;
+  background-color: black;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 1;
 }
 
 .navigation-list {
@@ -586,19 +606,46 @@ p {
   .current {
     background-color: rgba(163, 163, 163, 0.103);
   }
-  .logo {
+  .logo-link {
     width: 300px;
     height: 86px;
     background-size: 300px 86px;
+    margin-top: 70px;
+  }
+  .menu-button {
+    position: fixed;
+    z-index: 3;
+    top: 10px;
+    right: 10px;
+    background-color: transparent;
+    border: 0;
+    font: inherit;
+    text-transform: uppercase;
+  }
+  .main-link {
+    top: 10px;
+    left: 20px;
+    text-decoration: none;
+    width: 100px;
   }
   .navigation-list {
+    display: none;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    height: 230px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    height: 300px;
     width: 250px;
     background-color: transparent;
+  }
+  .navigation-list a {
+    color: #fff;
+  }
+  .navigation-list a:hover, .navigation-list a:focus, .navigation-list a:active {
+    background-color: gray;
   }
   .navigation-list-item a {
     min-width: 120px;
@@ -608,6 +655,23 @@ p {
   }
   .navigation-list-item a::after {
     height: 0;
+  }
+  .show-menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: fixed;
+    z-index: 4;
+    top: 30%;
+    left: 20%;
+  }
+  .show-menu-button {
+    color: #fff;
+    z-index: 4;
+  }
+  .show-overlay2 {
+    display: block;
+    z-index: 3;
   }
   .contacts {
     width: 300px;

@@ -5,14 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="theme-color" content="#b5b5b5">
-    <meta name="Description" content="A home page of photographer Ksenia Ozimina">
+    <meta name="Description" content="Домашняя страница фотографа Ксении Озиминой">
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/main.min.css">
     <title>Контактная информация</title>
 </head>
 <body class="inner-body">
     <header>
-        <a href="index.html"><span class="visually-hidden">На главную</span><div class="logo"></div></a>
+        <a class="logo-link" href="index.html">
+            <span class="visually-hidden">
+                На главную
+            </span>
+        </a>
+        <a href="index.html" class="menu-button main-link">Главная</a>
+        <button class="menu-button menu-js">Меню</button>
+        <div class="overlay2"></div>
         <nav class="navigation">
             <ul class="navigation-list">
                 <li class="navigation-list-item">
@@ -40,7 +47,7 @@
                 </li>
                 <li>
                     <h2>Мобильный</h2>
-                    <a href="tel:+7 981 846 82 91">+7 981 846 82 91</a>
+                    <a href="tel:+79818468291">+7 981 846 82 91</a>
                 </li>
                 <li>
                     <h2>Telegram</h2>
@@ -69,8 +76,8 @@
     </footer>
     <!-- sign form -->
     <section class="signup signup-popup">
-        <h2>Записаться на фотосессию</h1>
-        <form class="signup-form" netlify name="sign-up" method="POST">
+        <h2>Записаться на фотосессию</h2>
+        <form class="signup-form" data-netlify="true" name="sign-up" method="POST">
             <label for="name">Ваше имя</label>
             <input id="name" type="text" name="name" placeholder="Петя Клинков">
             <label for="date">Удобная для Вас дата</label>
@@ -86,5 +93,6 @@
     </section>
     <div class="overlay"></div>
     <script src="js/popup.js"></script>
+    <script src="js/menu.js"></script>
 </body>
 </html>

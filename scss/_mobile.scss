@@ -51,6 +51,8 @@
 //Smartphones
 @include mediaSm {
 
+    // popup
+
     .signup-popup {
         width: 300px;
         margin-left: -150px;
@@ -77,6 +79,8 @@
         width: 300px;
     }
 
+    //footer
+
     footer {
         min-height: 100px;
         padding-top: 60px;
@@ -101,17 +105,52 @@
         background-color: rgba(163, 163, 163, 0.103);
     }
 
-    .logo {
+    //logo
+
+    .logo-link {
         width: 300px;
         height: 86px;
         background-size: 300px 86px;
+        margin-top: 70px;
+    }
+
+    //navigation
+
+    .menu-button {
+        position: fixed;
+        z-index: 3;
+        top: 10px;
+        right: 10px;
+        background-color: transparent;
+        border: 0;
+        font: inherit;
+        text-transform: uppercase;
+    }
+
+    .main-link {
+        top: 10px;
+        left: 20px;
+        text-decoration: none;
+        width: 100px;
     }
 
     .navigation-list {
+        display: none;
         flex-direction: column;
-        height: 230px;
+        justify-content: space-between;
+        height: 300px;
         width: 250px;
         background-color: transparent;
+        
+        a {
+            color: #fff;
+
+            &:hover,
+            &:focus,
+            &:active {
+                background-color: gray;
+            }
+        }
 
     }
 
@@ -125,6 +164,26 @@
             height: 0;
         }
     }
+
+    .show-menu {
+        display: flex;
+        position: fixed;
+        z-index: 4;
+        top: 30%;
+        left: 20%;
+    }
+
+    .show-menu-button {
+        color: #fff;
+        z-index: 4;
+    }
+
+    .show-overlay2 {
+        display: block;
+        z-index: 3;
+    }
+
+    //contacts
 
     .contacts {
         width: 300px;
