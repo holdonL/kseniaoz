@@ -530,6 +530,9 @@ p {
 }
 
 @media screen and (max-width: 768px) {
+  .menu-button {
+    display: none;
+  }
   .about-info {
     width: 720px;
     grid-auto-rows: minmax(320px, auto);
@@ -638,6 +641,7 @@ p {
     margin-top: 70px;
   }
   .menu-button {
+    display: block;
     position: fixed;
     z-index: 3;
     top: 10px;

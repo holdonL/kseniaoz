@@ -15,6 +15,10 @@
 //Tablets & Small Laptops
 @include mediaMd {
 
+    .menu-button {
+        display: none;
+   }
+
    .about-info {
        width: 720px;
        grid-auto-rows: minmax(320px, auto);
@@ -126,6 +130,7 @@
     //navigation
 
     .menu-button {
+        display: block;
         position: fixed;
         z-index: 3;
         top: 10px;
