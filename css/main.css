@@ -632,7 +632,7 @@ p {
             order: 2;
   }
   .current {
-    background-color: rgba(163, 163, 163, 0.13);
+    background-color: rgba(163, 163, 163, 0.123);
   }
   .logo-link {
     width: 300px;
